@@ -84,25 +84,17 @@ h2{
 
 .parcours{
 	display: flex;
-
+	padding-top: 50px;
 }
 h3{
 	position: relative;
 	left:50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-
-}
-.experiances{
-	width: 50%;
-	text-align: center;
 }
 
-.experiances p{
-	color: #000;
-	size: 1rem;
-	padding: 0 10%;
-	text-align: justify;
+.detailedparcour p{
+	padding: 2% 10%;
 }
 
 .divider {
@@ -112,16 +104,10 @@ h3{
   align-self: stretch;
 }
 
-.formations{
-	width: 50%;
-	text-align: center;
-}
-
-
 .hsub{
 	size: 4rem;
+	font-weight: 400;
+	color: #333;
 	position: relative;
-	left:50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
+	left:5%;
 }
