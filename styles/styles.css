@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+	font-size: 1.2rem;
+	line-height: 1.3em;
+}
+
+.presentation{
+	width: 100%;
+	min-height: 80vh;
+	aspect-ratio: 16/9;
+	background: #000;
+	position: relative;
+}
+
+.presentation-background{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(.3);
+}
+
+.presentation-content{
+
+	position: absolute;
+	top :50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+
+}
+
+h1{
+	color: #FFF;
+	size: 5rem;
+	font-weight: 400;
+}
+
+.presentation-content p{
+	color: #FFF;
+	size: 3rem;
+	font-weight: 200;
+}
+
+.section{
+	padding: 50px 0;
+	background: #DDD;
+}
+
+.boxed{
+	max-width: 1280px;
+	margin-inline: auto;
+	padding: 0 10px;
+}
+
+.flex{
+
+}
+
+h2{
+	position: relative;
+	left: 15%;
+	color: #333;
+	size: 4rem;
+}
+
+.boxed p{
+	color: #000;
+	size: 1rem;
+	padding: 0 25%;
+	text-align: justify;
+}
+
+.parcours{
+	display: flex;
+
+}
+h3{
+	position: relative;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+
+}
+.experiances{
+	width: 50%;
+	text-align: center;
+}
+
+.experiances p{
+	color: #000;
+	size: 1rem;
+	padding: 0 10%;
+	text-align: justify;
+}
+
+.divider {
+  width: 2px;
+  margin: 6px 0;
+  background: #666;
+  align-self: stretch;
+}
+
+.formations{
+	width: 50%;
+	text-align: center;
+}
+
+
+.hsub{
+	size: 4rem;
+	font-variant: small-caps;
+	position: relative;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
