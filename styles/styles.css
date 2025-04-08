@@ -111,3 +111,24 @@ h3{
 	position: relative;
 	left:5%;
 }
+
+.projets{
+background: #AAA;
+}
+
+.projets-bar{
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.projets-tabs{
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.projets-view{
+	padding-top: 20px;
+}
