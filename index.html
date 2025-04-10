@@ -21,7 +21,7 @@
 	<div class="section">
 		<div class="boxed">
 			<h2>ACTUS</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl in augue elementum convallis in ac risus. Nulla facilisi. Donec eget mi a libero congue hendrerit. Integer mattis mollis lorem, sed pulvinar magna commodo sit amet.</p>
+			<p>En recherche d'alternance pour CDA avec 3w academie, aide de l'etat, ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl in augue elementum convallis in ac risus.</p>
 		</div>
 	</div>
 
@@ -54,14 +54,14 @@
 	<div class="section">
 		<div class="boxed projets">
 			<p class="hsub">PROJETS</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl in augue elementum convallis in ac risus.</p>
+			<p>.</p>
 			<!--<div class="projets">-->
 				<div class="projets-bar">
-					<button class="projets-tabs" id="0">Burreau d'étude</button>
-					<button class="projets-tabs" id="1">Applications privées</button>
-					<button class="projets-tabs" id="2">EternalPath</button>
-					<button class="projets-tabs" id="3">GameJams</button>
-					<button class="projets-tabs" id="4">Mod Jeux vidéo</button>
+					<button class="projets-tabs" onclick="OpenProject('0')">Burreau d'étude</button><!-- pluggin qgis  //  app fonctionnel  //  app de control  //  -->
+					<button class="projets-tabs" onclick="OpenProject('1')">projets en formation</button><!-- robot suiveur de ligne(camera)  //  electronique embarqué (PIC18F4550)  //  powershell EDF -->
+					<button class="projets-tabs" onclick="OpenProject('2')">Applications privées</button><!-- reciepe fonder & datapoint  //  Jeux indé  //  Mod Minecraft -->
+					<button class="projets-tabs" onclick="OpenProject('3')">EternalPath</button><!--  Nice inter team (using git)  //  Comple algorythm  //  Shaders  //  && GAME ON STEAM-->
+					<button class="projets-tabs" onclick="OpenProject('4')">GameJams</button><!-- platformer  //  buoy  //  Winter-->
 				</div>
 				<div class="projets-view" id="0">
 					<h3>Applications pour un burreau d'étude dans le déploiement fibre</h3>
@@ -70,17 +70,113 @@
 					<div class="projets-exemples-group">
 						<div class="projets-exemples">
 							<img src="img/presentation.jpg" class="projets-exemples-background">
-							<p class="hsub">Exemple 1</p>
+							<p class="hsub">Pluggins QGis (python)</p>
 							<p>Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 						</div>
 						<div class="projets-exemples">
 							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
-							<p class="hsub">Exemple 2</p>
+							<p class="hsub">Applications fonctionel(python, c#)</p>
 							<p>Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 						</div>
 						<div class="projets-exemples">
 							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
-							<p class="hsub">Exemple 3</p>
+							<p class="hsub">Applications de controle(python, c#)</p>
+							<p>Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+					</p>
+				</div>	
+
+				<div class="projets-view" id="1" style="display: none;">
+					<h3>Projets effectué au cours de mes formations</h3>
+					<p>   Lors de mon travail chez CFI Tech en tant que chargé d'applicatifs.
+					<br/> appli complex ui simple, bla bla.
+					<div class="projets-exemples-group">
+						<div class="projets-exemples">
+							<img src="img/presentation.jpg" class="projets-exemples-background">
+							<p class="hsub">Pluggins QGis (python)</p>
+							<p>Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications fonctionel(python, c#)</p>
+							<p>Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications de controle(python, c#)</p>
+							<p>Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+					</p>
+				</div>	
+
+				<div class="projets-view" id="2" style="display: none;">
+					<h3>Applications privée et projets à but ludique</h3>
+					<p>   Lors de mon travail chez CFI Tech en tant que chargé d'applicatifs.
+					<br/> appli complex ui simple, bla bla.
+					<div class="projets-exemples-group">
+						<div class="projets-exemples">
+							<img src="img/presentation.jpg" class="projets-exemples-background">
+							<p class="hsub">Pluggins QGis (python)</p>
+							<p>Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications fonctionel(python, c#)</p>
+							<p>Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications de controle(python, c#)</p>
+							<p>Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+					</p>
+				</div>	
+
+				<div class="projets-view" id="3" style="display: none;">
+					<h3>jeux profetionnel en tant que benevole</h3>
+					<p>   Lors de mon travail chez CFI Tech en tant que chargé d'applicatifs.
+					<br/> appli complex ui simple, bla bla.
+					<div class="projets-exemples-group">
+						<div class="projets-exemples">
+							<img src="img/presentation.jpg" class="projets-exemples-background">
+							<p class="hsub">Pluggins QGis (python)</p>
+							<p>Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications fonctionel(python, c#)</p>
+							<p>Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications de controle(python, c#)</p>
+							<p>Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+					</p>
+				</div>	
+
+				<div class="projets-view" id="4" style="display: none;">
+					<h3>Jeux fait pour des GameJams</h3>
+					<p> Les gameJames sont des compétition de création de jeux vidéos, incluant un ou plusieurs thèmes ainsi qu'une durée limitée. Les spécificitées peuvent beaucoup varié suivant les éditions.
+					<!--<br/> appli complex ui simple, bla bla.-->
+					<div class="projets-exemples-group">
+						<div class="projets-exemples">
+							<img src="img/presentation.jpg" class="projets-exemples-background">
+							<p class="hsub">Pluggins QGis (python)</p>
+							<p>Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications fonctionel(python, c#)</p>
+							<p>Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+						<div class="projets-exemples">
+							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
+							<p class="hsub">Applications de controle(python, c#)</p>
 							<p>Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 						</div>
 					</div>

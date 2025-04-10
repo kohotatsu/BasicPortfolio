@@ -138,6 +138,7 @@ background: #AAA;
 
 .projets-view{
 	padding-top: 20px;
+	display: block;
 }
 
 .projets-exemples-group{
