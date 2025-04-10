@@ -138,4 +138,21 @@ background: #AAA;
 
 .projets-view{
 	padding-top: 20px;
+	display: block;
+}
+
+.projets-exemples-group{
+	display: flex;
+
+}
+
+.projets-exemples-background{
+	align-self: center;
+	position: relative;
+	margin: 10px;
+	padding-inline: 10%;
+	max-width: 80%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	filter: brightness(.3);
 }
