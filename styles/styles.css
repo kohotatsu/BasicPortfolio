@@ -154,5 +154,5 @@ background: #AAA;
 	max-width: 80%;
 	aspect-ratio: 16/9;
 	object-fit: cover;
-	filter: brightness(.3);
+	filter: brightness(.8);
 }
