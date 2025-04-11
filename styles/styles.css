@@ -165,11 +165,21 @@ background: #AAA;
 }
 
 .link-group{
+	width: 150px;
+	height: 150px;
 	margin-inline: auto;
+	object-fit: scale-down;
+}
+
+.link-group p{
 	text-align: center;
 }
 
 .link-group img{
 	width: 100px;
 	height: 100px;
+	object-fit: fill;
+	object-position: 0% 0%;
+	position: relative;
+	aspect-ratio: 1;
 }
