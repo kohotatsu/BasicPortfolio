@@ -156,3 +156,20 @@ background: #AAA;
 	object-fit: cover;
 	filter: brightness(.8);
 }
+
+
+.links{
+	display: flex;
+	margin-inline: auto;
+	
+}
+
+.link-group{
+	margin-inline: auto;
+	text-align: center;
+}
+
+.link-group img{
+	width: 100px;
+	height: 100px;
+}
