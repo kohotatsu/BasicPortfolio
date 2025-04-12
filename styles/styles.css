@@ -78,7 +78,11 @@ h2{
 .boxed p{
 	color: #000;
 	size: 1rem;
-	padding: 0 25%;
+	padding: 0 20%;
+	
+}
+
+.actus{
 	text-align: justify;
 }
 
@@ -98,10 +102,12 @@ h3{
 
 	width: 50%;
 	flex-grow: 1;
+	text-align: justify;
 }
 
 .detailedparcour p{
-	padding: 2% 10%;
+	padding-inline:10%;
+	padding-bottom: 10px;
 }
 
 .divider {
@@ -118,7 +124,7 @@ h3{
 	position: relative;
 	left:5%;
 	margin-bottom: 15px;
-	text-align: right;
+	text-align: left;
 }
 
 .projets{
