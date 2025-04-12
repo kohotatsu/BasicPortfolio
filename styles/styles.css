@@ -112,11 +112,13 @@ h3{
 }
 
 .hsub{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	color: #333;
 	position: relative;
 	left:5%;
+	margin-bottom: 15px;
+	text-align: right;
 }
 
 .projets{
@@ -143,6 +145,11 @@ background: #AAA;
 
 .projets-exemples-group{
 	display: flex;
+
+}
+
+.projets-exemples p{
+	padding-inline: 5%;
 
 }
 
@@ -182,4 +189,19 @@ background: #AAA;
 	object-position: 0% 0%;
 	position: relative;
 	aspect-ratio: 1;
+}
+
+.contact-item{
+	margin-inline: 20%;
+	display: flex;
+}
+
+.contact-item img{
+	width: 50px;
+	height: 50px;
+}
+
+.contact-item p{
+	text-align: left;
+	padding: 0;
 }
