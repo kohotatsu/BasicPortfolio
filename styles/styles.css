@@ -139,25 +139,90 @@ background: #AAA;
 	margin-right: 25%;
 }
 
-.projets-tabs{
+.OLDprojets-tabs{
 	width: 100%;
 	margin-left: 1px;
 	margin-right: 1px;
 }
 
+.projets-tabs{
+	background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.projets-tabs:hover {
+  background-color: #777;
+}
+
 .projets-view{
-	padding-top: 20px;
+	padding-top: 80px;
 	display: block;
 }
 
 .projets-exemples-group{
-	display: flex;
+	max-width: 1000px;
+  position: relative;
+  margin: auto;
 
 }
-
+.projets-exemples{
+	display: none;
+}
 .projets-exemples p{
 	padding-inline: 5%;
+}
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .projets-exemples-background{
