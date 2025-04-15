@@ -179,6 +179,14 @@ background: #AAA;
 .projets-exemples p{
 	padding-inline: 5%;
 }
+.projets-exemples img{
+	object-fit: contain;
+	display: block;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100vh;
+}
 
 .prev, .next {
   cursor: pointer;
