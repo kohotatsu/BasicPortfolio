@@ -20,6 +20,48 @@ p{
 	line-height: 1.3em;
 }
 
+header{
+	position: fixed;
+	top : 0;
+	width: 90%;
+	z-index: 99;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5%;
+}
+
+.logo{
+	image-resolution: 1/1;
+	width: 75px;
+}
+
+.nav-links{
+	list-style: none;
+	transform: translate(100%, 0px);
+}
+
+.nav-links li{
+	display: inline-block;
+	padding-inline: 10px;
+}
+.nav-links li a{
+	transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+	color: #0088a9;
+}
+
+.back-button{
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1.0);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
 .presentation{
 	width: 100%;
 	min-height: 80vh;
