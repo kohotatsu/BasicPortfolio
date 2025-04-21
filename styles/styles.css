@@ -33,6 +33,20 @@ p{
 	padding: 0px 5%;
 }*/
 
+.sep-darktolight{
+	background: #543864;
+	background: linear-gradient(0deg,rgba(84, 56, 100, 1) 0%, rgba(32, 32, 64, 1) 100%);
+	padding: 0px 5%;
+	height: 50px;
+}
+
+.sep-lighttodark{
+	background: #FFBD69;
+	background: linear-gradient(180deg,rgba(84, 56, 100, 1) 0%, rgba(32, 32, 64, 1) 100%);
+	padding: 0px 5%;
+	height: 50px;
+}
+
 .menubar{
 	position: sticky;
 	top : 0;
