@@ -11,7 +11,7 @@ body{
 	font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
-
+  color: #FFBD69;
   background: #000;
 }
 
@@ -20,12 +20,25 @@ p{
 	line-height: 1.3em;
 }
 
-header{
+/*header{
 	position: fixed;
 	top : 0;
 	width: 90%;
 	z-index: 99;
 	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5%;
+}*/
+
+.menubar{
+	position: sticky;
+	top : 0;
+	width: 90%;
+	z-index: 99;
+	background: #543864;
+	background: linear-gradient(0deg,rgba(84, 56, 100, 1) 0%, rgba(32, 32, 64, 1) 100%);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -48,6 +61,7 @@ header{
 }
 .nav-links li a{
 	transition: all 0.3s ease 0s;
+	color: #FFBD69;
 }
 .nav-links li a:hover{
 	color: #0088a9;
@@ -55,11 +69,15 @@ header{
 
 .back-button{
 	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1.0);
+	background-color: #FFBD69;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+}
+
+.back-button:hover{
+	background-color: #0088a9;
 }
 
 .presentation{
@@ -74,7 +92,8 @@ header{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: brightness(.3);
+	filter: brightness(.3) blur(4px);
+  
 }
 
 .presentation-content{
@@ -101,7 +120,7 @@ h1{
 
 .section{
 	padding: 50px 0;
-	background: #DDD;
+	background: #543864;
 }
 
 .boxed{
@@ -113,12 +132,12 @@ h1{
 h2{
 	position: relative;
 	left: 15%;
-	color: #333;
+	color: #FFBD69;
 	size: 4rem;
 }
 
 .boxed p{
-	color: #000;
+	color: #FFF;
 	size: 1rem;
 	/*padding: 0 20%;*/
 	
@@ -158,14 +177,14 @@ h3{
 .divider {
   width: 2px;
   margin: 6px 0;
-  background: #666;
+  background: #DDD;
   align-self: stretch;
 }
 
 .hsub{
 	font-size: 1.4rem;
 	font-weight: 400;
-	color: #333;
+	color: #FFBD69;
 	position: relative;
 	left:5%;
 	margin-bottom: 15px;
@@ -185,7 +204,7 @@ h3{
 	margin-bottom: 20px;
 }
 .projets{
-background: #AAA;
+background: #202040;
 }
 
 .projets-bar{
@@ -202,19 +221,24 @@ background: #AAA;
 }
 
 .projets-tabs{
-	background-color: #555;
-  color: white;
+	font-family: "DM Serif Text", serif;
+  font-weight: 500;
+  font-style: bold;
+
+	background-color: #FF6363;
+  color: #DDD;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 22px;
   width: 20%;
+  transition: background-color 0.2s ease;
 }
 
 .projets-tabs:hover {
-  background-color: #777;
+  background-color: #543864;
 }
 
 .projets-view{
@@ -270,17 +294,17 @@ background: #AAA;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #ddd;
+  background-color: #7171b1;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.4s ease;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #FFBD69;
 }
 
 .active, .dot:hover {
-  background-color: #7171b1;
+  background-color: #FFBD69;
 }
 
 .fade {
