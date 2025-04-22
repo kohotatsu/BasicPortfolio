@@ -213,6 +213,7 @@ h3{
 	left:5%;
 	margin-bottom: 15px;
 	padding: 0 5%;
+	width: fit-content;
 	text-align: left;
 	text-decoration: underline;
 }
