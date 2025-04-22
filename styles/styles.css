@@ -128,6 +128,7 @@ p{
 }
 
 h1{
+	width: fit-content;
 	color: #FFF;
 	size: 5rem;
 	font-weight: 400;
@@ -153,6 +154,7 @@ h1{
 h2{
 	position: relative;
 	left: 15%;
+	width: fit-content;
 	color: #FFBD69;
 	size: 4rem;
 }
@@ -177,6 +179,7 @@ h2{
 h3{
 	position: relative;
 	left:50%;
+	width: fit-content;
 	transform: translate(-50%,-50%);
 	text-align: center;
 	font-size: 1.4rem;
@@ -233,12 +236,6 @@ background: #202040;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
-}
-
-.OLDprojets-tabs{
-	width: 100%;
-	margin-left: 1px;
-	margin-right: 1px;
 }
 
 .projets-tabs{
