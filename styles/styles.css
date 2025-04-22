@@ -60,6 +60,11 @@ p{
 	padding: 0px 5%;
 }
 
+.menubar hr{
+	width: 40%;
+	visibility: hidden;
+}
+
 .logo{
 	image-resolution: 1/1;
 	width: 75px;
@@ -67,7 +72,7 @@ p{
 
 .nav-links{
 	list-style: none;
-	transform: translate(100%, 0px);
+	transform: translate(0%, 0px);
 }
 
 .nav-links li{
@@ -89,6 +94,7 @@ p{
 	border-radius: 50px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+	flex: 1;
 }
 
 .back-button:hover{
@@ -266,6 +272,7 @@ background: #202040;
   position: relative;
   margin: auto;
   padding-bottom: 15px;
+  height: 100%;
 }
 .projets-exemples{
 	display: none;
