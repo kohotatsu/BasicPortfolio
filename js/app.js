@@ -1,45 +1,30 @@
 console.log("Hello Web");
-
-let slideIndex = 1;
-let currentTabId = 0;
+ShowProject(0);
 
 
-showSlides(slideIndex);
-
-function  OpenProject(tabId){
-	currentTabId = tabId;
-	console.log("Tab "+tabId +" clicked");
-	let i;
-	let x = document.getElementsByClassName("projets-view");
-	for (i=0;i<x.length;i++){
-		x[i].style.display = "none";
-	}
-	document.getElementById(tabId).style.display = "block";
-	currentSlide(1);
+function ToggleMenu(x) {
+  x.classList.toggle("change");
+  let mh = document.getElementsByClassName("respnsive-menu-items")[0].style.maxHeight;
+  
+  document.getElementsByClassName("respnsive-menu-items")[0].style.maxHeight = mh == "50vh" ? "0vh" : "50vh";
+  document.getElementsByClassName("respnsive-menu-items")[0].style.minHeight = mh == "50vh" ? "0vh" : "20vh";
+  
+  //console.log(mh);
 }
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("projets-exemples");
-  let dots = document.getElementsByClassName("dot");
-  if (n > 3) {slideIndex = 1}
-  if (n < 1) {slideIndex = 3}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function ShowProject(n){
+  let projs = document.getElementsByClassName("project-view")
+  //console.log("proj wanted: " + n);
+  for (var i = 0; i < projs.length; i++) {
+    projs[i].style.display = i==n? "block":"none";
+    projs[i].style.opacity = i==n? "100%":"0%";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[currentTabId*3+slideIndex-1].style.display = "block";
-  dots[currentTabId*3+slideIndex-1].className += " active";
+/*  switch(n){
+  case 0:
+    document.getElementById("projets0").style.display = "block";
+    break;
+  case 1:
+    document.getElementById("projets1").style.display = "block";
+    break;
+  }*/
 }
