@@ -10,22 +10,41 @@
 </head>
 <body>
 
-	
-
-	<div class="presentation" name="presentation">
-		<img src="img/PresentationPortfolio2.PNG" class="presentation-background">
-		<div class="presentation-content">
+	<div class="title" name="title">
+		<img src="img/PresentationPortfolio2.PNG" class="title-background">
+		<div class="title-content">
 			<h1>EL BASRI Tristan</h1>
-			<p><br/>Développeur spétialisé applications .NET et Jeux vidéos</p>
+			<p><br/>Concepteur développeur Full stack</p>
 		</div>
 	</div>
 
 	<div class="menubar">
 		<img src="img/bunbun500.png" alt="logo" class="logo">
+		<div class="menu-items">
+			<a href="#presentation">Presentation</a>
+			<a href="#projets">projets</a>
+			<a href="#parcours">parcour</a>
+			<a href="#liens">lien & contact</a>
+			<a href="#" ><button class="back-button">Back</button> </a>
+			
+		</div>
+			<div class="respnsive-menu-buton" onclick="ToggleMenu(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				<div class="respnsive-menu-items">
+					<a href="#presentation">Presentation</a>
+					<a href="#projets">projets</a>
+					<a href="#parcours">parcour</a>
+					<a href="#liens">lien & contact</a>
+					<a href="#" ><button class="back-button">Back</button> </a>
+				</div>
+			</div>
+		<!--
 		<hr></hr>
 		<nav>
 			<ul class="nav-links">
-				<li> <a href="#actus">Actus</a> </li>
+				<li> <a href="#presentation">Presentation</a> </li>
 				<li> <a href="#parcours">Parcour&Formations</a> </li>
 				<li> <a href="#projets">Projets</a> </li>
 				<li> <a href="#liens">Liens</a> </li>
@@ -33,215 +52,163 @@
 			</ul>
 		</nav>
 		<a href="#" class="cta"><button class="back-button">Back</button> </a>
+		-->
 	</div>
-
-	<section id="actus">
-	<div class="section">
-		<div class="boxed actus">
-			<h2  name="actus">ACTUS</h2>
-			<p class="psub">En avril, j'ai rejoint la 3WAcademy dans le but de reprendre mes études. Ainsi, je suis actuellement à la recherche d'une alternance dans le cadre de la formation "Expert en système d'informations" avec aux cours de la formation un choix d'option "Big Data" ou "Sécurité Informatique". Je recherche donc une entreprise aux alentours de Marseille ou en télétravail avec qui je pourrais évoluer dans le futur.</p>
-		</div>
-	</div>	
-	</section>
-
-	<section id="parcours"class="section">
-		<div class="boxed">
-			<h3>PARCOURS & FORMATIONS</h3>
-			<div class="parcours">
-				
-				<div class="detailedparcour">
-					<p class="hsub">Chargé d'applicatif</p>
-					<p class="psub">Chargé d'applicatif au seins de CFI Tech, Mon rôle au seins de l'équipe burreau d'étude était de me servir de mes connaissances du métier afin de réaliser des outils permettant l'aide et l'optimisation du travail du reste de l'équipe.<br/><br/> Pour ce faire, j'ai réaliser l'enssemble du processus de création d'application, de la rédaction du cachier des charges au suivis et mis à jours des applications déploiyés en passant bien sur par les prototypage, réalisation, controle qualité, etc...</p>
-					<p class="hsub">Développeur Jeux vidéos c#</p>
-					<p class="psub">Je développe seul depuis longtemps de nombreux jeux vidéo en tant que hobby. Majoritairement via le moteur de jeu Unity. Ceux-ci m'ont permis de comprendre et travailler avec de nombreux aspects dans et autour du domaine du développement.<br/><br/> J'ai également participé à quelques GameJams (compétitions de création de jeux vidéo). S'effectuant généralement sur un temps court (quelques jours à quelques semaines suivant les éditions), cet exercice est souvent épuisant mais toujours enrichissant et force à gérer correctement un temps de développement qui peut être cahotique car dépendant de nombreux facteurs et incertain tant que le projet est à l'état d'idée.<br/><br/> En outre, j'ai pu aider un petit studio indépendant en cours de crétion sur leurs permier jeu "Eternals Path" dont vous pouvez avoir plus d'infos dans la partie "projets" de ce document.</p>
-				</div>
-				<div class="divider"></div>
-				<div class="detailedparcour">
-					<p class="hsub">Concepteur Développeur d'Application 3W Academie</p>
-					<p class="psub">En cours<br/>Formation en alternance 3semaine en entreprise 1 semaine en cours à distance.</p>
-					<p class="hsub">Technitien Burreau d'Etude</p>
-					<p class="psub">Formation auprès de Access Pro. aux métiers autours du déploiement fibre, avec emphase sur le métier de technicien burreau d'étude en déploiement fibre optique.<br/> J'y ai appris le fonctionnement et normes des réseaux fibre français, ainsi que l'uttilisation de logiciel profetionnels tel AutoCAD et QGis.</p>
-					<p class="hsub">DUT Génie électrique et Informatique Industrielle</p>
-					<p class="psub">Fait à l'acadéie Aix-Marseille sur le pôle de Saint-Jerome. Cette formation offre une double compétence en electronique et informatique. </p>
-					<p class="hsub">BAC STI2D option Systèmes d'information numérique</p>
-					<p class="psub"> baccalauréat STI2D (sciences et technologies de l'industrie et du développement durable) option SIN (Systèmes d'information numérique) passé avec mention Bien au lycée Jean-Perrin.</p>
-				</div>
+	
+	<div id="presentation"class="section lightArea"></div>
+	
+	<section>
+		<div class="presentation lightArea">
+			<div class="centerOnWide ">
+			<p> Après un passage dans le privé ainsi que 3 années de formation et de programmation de projets en indépendant, je souhaite poursuivre mon apprentissage par le biais de l'alternance. Je recherche donc une entreprise aux alentours de Marseille ou en télétravail avec qui je pourrais évoluer dans le futur. [Ajouter diginamic avec cursus visé?]</p>	
 			</div>
 		</div>
 	</section>
 
-	<section id="projets"class="section">
-		<div class="sep-lighttodark"></div>
-		<div class="boxed projets">
-			<!--<p class="hsub">PROJETS</p>-->
-			<h2>PREOJETS</h2>
-			<p class="psub pbotmarg20">Présenté ci-dessous, une courte sélection des projets que j'ai eu l'occasion de réaliser au cours de mon parcours. Depuis mon apprentissage à une utilisation professionnelle, rangé par thème et non chronologique. N'étant pas spécialisé dans le développement web, je n'ai pas de projets suffisamment aboutis pour que l'un d'eux figure ici. Excepter le présent portfolio, fait avec SublimeText en HTML, CSS et JavaScript. Hébergé sur Git, dont vous pouvez consulter ou télécharger les fichiers sources <a href="https://github.com/kohotatsu/BasicPortfolio">ici</a>.</p>
-			<!--<div class="projets">-->
-				<!--<div class="projets-bar">-->
-					<button class="projets-tabs" onclick="OpenProject('0')">Burreau d'étude</button><!-- pluggin qgis  //  app fonctionnel  //  app de control  //  -->
-					<button class="projets-tabs" onclick="OpenProject('1')">projets en formation</button><!-- robot suiveur de ligne(camera)  //  electronique embarqué (PIC18F4550)  //  powershell EDF -->
-					<button class="projets-tabs" onclick="OpenProject('2')">Applications privées</button><!-- reciepe fonder & datapoint  //  Jeux indé  //  Mod Minecraft -->
-					<button class="projets-tabs" onclick="OpenProject('3')">Eternals Path</button><!--  Nice inter team (using git)  //  Comple algorythm  //  Shaders  //  && GAME ON STEAM-->
-					<button class="projets-tabs" onclick="OpenProject('4')">GameJams</button><!-- platformer  //  buoy  //  Winter-->
-				<!--</div>-->
-				<div class="projets-view" id="0">
-					<h3>Applications pour un burreau d'étude dans le déploiement fibre</h3>
-					<p class="psub pcenter" >   Lors de mon travail chez CFI Tech en tant que chargé d'applicatifs.
-					<br/> toutes les applications ont été développer en vue d'un usage interne. Pas d'exemple precis, les grande categories niquement.</p>
-					<div class="projets-exemples-group">
-						<div class="projets-exemples fade">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/QGIS_with_OSM_and_Safecast_data.png" class="projets-exemples-background">
-							<p class="hsub">Pluggins QGis (python)</p>
-							<p class="psub">De nombreuses étapes de l'étude du déploiement fibre passent par le logiciel QGIS permettant une vue aérienne du réseau et des emplacements des différents éléments (boîtiers de services, poteaux, accès aux câbles enterrés, etc...). Ce logiciel permet l'implémentation de plugins et scripts Python afin d'aider dans des tâches spécifiques. Certains courts scripts peuvent simplement être enregistrés dans la console (par exemple un script permettant une application automatique de différents styles pour les objets présents sur la carte). Pour les opérations plus complexes, il a été préférable d'utiliser des plugins distribués en interne et gardés à jour.(par exemple la vérification des parcours de fibre en cohérence avec le type de fibre utilisé et les connexions prévues).</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/ComacPE.PNG" class="projets-exemples-background">
-							<p class="hsub">Applications fonctionel(python, c#)</p>
-							<p class="psub">Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/CAPFT ErrorVerif.PNG" class="projets-exemples-background">
-							<p class="hsub">Applications de controle(python, c#)</p>
-							<p class="psub">Les applications de contrôle permettent de fluidifier les échanges avec les clients et diminuent les coûts en évitant les retours inutiles dus à des erreurs humaines évitables. Notamment les erreurs de procédure (date inexacte, signature manquante...) Ou encore en centralisant, par le biais d'un contrôle unique mis à jour en cas de nouvelles informations, évitant l'envoi d'une étude contenant des erreurs déjà rencontrées (changement de format d'envoi, nouveau document annexe requis, changement de la réglementation, etc...).</p>
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					</div>
-					<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
-				</div>	
+	<div id="projets"class="sep-lighttodark section"></div>
 
-				<div class="projets-view" id="1" style="display: none;">
-					<h3>Projets effectué au cours de mes formations</h3>
-					<p class="psub pcenter"> experiance pratique prog lowLvl lors de mes études (parler certif cisco?) avec stage interessant.</p>
-					<div class="projets-exemples-group">
-						<div class="projets-exemples fade">
-							<img src="img/presentation.jpg" class="projets-exemples-background">
-							<p class="hsub">robot suiveur de ligne par vicion camera</p>
-							<p class="psub">Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/PresentationPortfolio.PNG" class="projets-exemples-background">
-							<p class="hsub">Dev embarqué pic18f</p>
-							<p class="psub">Au cours de mes études, j'ai pu notemment concevoir, réalier et programmer des projets de cours sur carte electronique PIC18F4550, apprenant tout les aspects de l'alimentation découplé au fonctionnement du quartz pour cadencer le microcontroleur.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/PresentationPortfolio2.PNG" class="projets-exemples-background">
-							<p class="hsub">powershell EDF</p>
-							<p class="psub">Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						</div>
-					<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
-				</div>	
-
-				<div class="projets-view" id="2" style="display: none;">
-					<h3>Applications privée et projets à but ludique</h3>
-					<p class="psub pcenter">   Ayant commencé jeune, j'ai eu l'ocasion de développer de nombreux projets personnels, autant à but pédagogique que ludique.</p>
-					<div class="projets-exemples-group">
-						<div class="projets-exemples fade">
-							<img src="img/reciepeFinder.PNG" class="projets-exemples-background">
-							<p class="hsub">Recherche de recette via API</p>
-							<p class="psub">Une application .NET MAUI Permetant de récupérer depuis une API en ligne (api.spoonacular) une selection de recettes trié en fonction de l'envie de l'utilisateur. Il est possible d'entré une liste d'ingrédiants souaiter, une liste d'ingrédiants à éviter, ajouter une catégorie d'alergène, une type de plat, et bien plus.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/Capture IG 4.PNG" class="projets-exemples-background">
-							<p class="hsub">Projet de "jeux" et experimentations</p>
-							<p class="psub">Floppy Fish, Disponible en téléchargement sur Itch.io et un projet fait avec le moteur de jeu Godot en C# Dans lequel on controle une méduse devant éviter toutes sortes de crétures aquatique. Ce qui à débuter comme un exercice pour faire des shaders (proche du GLSL) à grandit en un jeu toujoutrs incomplet mais bien avancé.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="img/MinecraftMod.PNG" class="projets-exemples-background">
-							<p class="hsub">Mods minecraft (Java)</p>
-							<p class="psub">C'est par le développement de mod minecraft (dont j'ai perdu au fil des années la plupart des fichiers sources) que j'ai commencé le développement en 2010. Le dernier mod réliser ajouter de nouveaux blocks, outils et équipement et de nouvelles mécanique au jeu de base.</p>
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					</div>
-					<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
-				</div>	
-
-				<div class="projets-view" id="3" style="display: none;">
-					<h3>jeu profetionnel en tant que benevole</h3>
-					<p class="psub pcenter"> Dans un petite équipe dont 3 développeurs. Totalement à distance (membre de l'équipe à l'étrangé) utilisant Git pour le développement et suivis des tâches à distance.
-					</p>
-					<div class="projets-exemples-group">
-						<div class="projets-exemples fade">
-							<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1949310/header.jpg?t=1740313132" class="projets-exemples-background">
-							<p class="hsub">Beaucoup de debugage</p>
-							<p class="psub">Description de l'exemple 1 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1949310/ss_c2b340c49a493e29413eeb6506f518d547b9cad9.600x338.jpg?t=1740313132" class="projets-exemples-background">
-							<p class="hsub">Génération de graphe</p>
-							<p class="psub">Description de l'exemple 2 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1949310/ss_e2d50232db175faaeba4eea14ee34cf58a60f92c.1920x1080.jpg?t=1740313132" class="projets-exemples-background">
-							<p class="hsub">Shaders (code & noCode)</p>
-							<p class="psub">Description de l'exemple 3 Sed consequat euismod tortor sed imperdiet. Proin vitae cursus magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					</div>
-					<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
-				</div>	
-
-				<div class="projets-view" id="4" style="display: none;">
-					<h3>Jeux fait pour des GameJams</h3>
-					<p class="psub pcenter"> Les gameJames sont des compétition de création de jeux vidéos, incluant un ou plusieurs thèmes ainsi qu'une durée limitée. Les spécificitées peuvent beaucoup varié suivant les éditions.
-					</p>
-					<!--<br/> appli complex ui simple, bla bla.-->
-					<div class="projets-exemples-group">
-						<div class="projets-exemples fade">
-							<img src="https://img.itch.zone/aW1hZ2UvMTY3ODEwOC85OTg1NzU0LnBuZw==/250x600/t9RVKN.png" class="projets-exemples-background">
-							<p class="hsub">Première tentative</p>
-							<p class="psub">Ma première game jam. Le levelDesign m'as pris plus de temps que prévu mais j'ai quand même pu finir le niveau. Malerheusement, les effets de shaders et particules ne fonctionnent pas sur la version WabGL (sur navigateur) mais uniquelment sur les vresions Executables. </p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="https://img.itch.zone/aW1hZ2UvMjc4OTIzMS8xNjY3NTAzMS5wbmc=/original/r%2Bt9YO.png" class="projets-exemples-background">
-							<p class="hsub">Score GameJam</p>
-							<p class="psub">Jeu inspiré du "Suika Game" avec un twist, la flotaison des objets. Theme, Clouded Score, Resultat...</p>
-						</div>
-						<div class="projets-exemples fade">
-							<img src="https://img.itch.zone/aW1hZ2UvMzI3MzIwNC8xOTUzNTY0MC5wbmc=/original/MpDaUJ.png" class="projets-exemples-background">
-							<p class="hsub">Winter GameJam</p>
-							<p class="psub">Peu de graphysme, shader, winterJam ....</p>
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					</div>
-					<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-					</div>
-				</div>	
-			<!--</div>-->
-			
+	<section><!-- id="projets"class="section">-->
+		<div class="projets darkArea">
+			<div class="centerOnWide">
+			<h1>PREOJETS</h1>
+			<p ></br>
+			Présenté ci-dessous, une courte sélection des projets que j'ai eu l'occasion de réaliser au cours de mon parcours. N'étant pas spécialisé dans le développement web, je n'ai pas de projets suffisamment aboutis pour que l'un d'eux figure ici.</p>
+			</div>	
+		
+		<div class="carousel centerOnWide90">
+			<ul class="carousel-list">
+					<a class="carousel-button rotate-back" onclick="ShowProject(0)">
+						<img src="img/MinecraftMod.PNG" >
+						<h3 class="project-label">Game Mod (JAVA)</h3>
+					</a>
+					<a class="carousel-button rotate-back" onclick="ShowProject(1)">
+						<img src="img/Capture IG 4.PNG " >
+						<h3 class="project-label">Video Game (C#, Godot)</h3>
+					</a>
+					<a class="carousel-button rotate-back" onclick="ShowProject(2)">
+						<img src="img/CAPFT ErrorVerif.PNG ">
+						<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
+					</a>
+					<a class="carousel-button rotate-back" onclick="ShowProject(3)">
+						<img src="img/reciepeFinder.PNG ">
+						<h3 class="project-label">custom reciepe app (C#, MAUI)</h3>
+					</a>
+					<a class="carousel-button rotate-back" onclick="ShowProject(4)">
+						<img src="img/ComacPE.PNG">
+						<h3 class="project-label">Data treatment software (Python, Pyqt5)</h3>
+					</a>
+			</ul>
 		</div>
-		<div class="sep-darktolight"></div>
+		<div class="project-view centerOnWide90" id="projets0">
+			<div class="project-img">
+				<img src="img/MinecraftMod.PNG">
+			</div>
+			<h2>Paragr</h2>
+			<p>
+				Mod pour le jeu Minecraft fait avec InteliJ en JAVA. In turpis diam, ornare eu dolor et, imperdiet faucibus mi. Sed vitae erat sit amet massa rhoncus lobortis ut a nisi. Mauris id ornare velit. Nullam suscipit diam eu ipsum consectetur, quis interdum sem consequat. Nam leo ipsum, laoreet eget ex placerat, consequat malesuada libero. Nullam eu varius orci. Nullam quam libero, tempus a sollicitudin non, aliquam a nisi. Pellentesque vulputate nunc at orci pellentesque, sit amet aliquam leo commodo.
+			</p>
+
+		</div>
+
+		<div class="project-view centerOnWide90" id="projets1">
+			<div class="project-img">
+				<img src="img/Capture IG 4.PNG">
+			</div>
+			<h2>Paragr</h2>
+			<p>
+				Jeux video dans le but d'exercice de développement de shaders fait en c#, GLSL avec le moteur Godot, dispo sur itch. Nam consequat nisl eu convallis dignissim. Nulla bibendum, diam et posuere vehicula, ligula lacus egestas lectus, ut congue sapien mauris a quam. Donec vel placerat tellus, vel dictum diam. Cras euismod odio erat, sit amet fringilla velit condimentum quis. Nunc turpis tellus, molestie ac ex id, hendrerit pulvinar justo. Sed scelerisque libero ac volutpat rhoncus.
+			</p>
+
+		</div>
+
+		<div class="project-view centerOnWide90" id="projets1">
+			<div class="project-img">
+				<img src="img/CAPFT ErrorVerif.PNG">
+			</div>
+			<h2>Paragr</h2>
+			<p>
+				Logiciel utiliser dans un bureau d'étude de déploiment fibre servant à controler les docuemnt transmits a orange telecom dans le cadre de renforcement/pose d'appuis.Fait en python avec PyQt5 pour l'ui. Nam consequat nisl eu convallis dignissim. Nulla bibendum, diam et posuere vehicula, ligula lacus egestas lectus, ut congue sapien mauris a quam. Donec vel placerat tellus, vel dictum diam. Cras euismod odio erat, sit amet fringilla velit condimentum quis. Nunc turpis tellus, molestie ac ex id, hendrerit pulvinar justo. Sed scelerisque libero ac volutpat rhoncus.
+			</p>
+
+		</div>
+
+		<div class="project-view centerOnWide90" id="projets1">
+			<div class="project-img">
+				<img src="img/reciepeFinder.PNG">
+			</div>
+			<h2>Paragr</h2>
+			<p>
+				logiciel permetant la recherche, de recette de cuisine via de nombreux filtres à l'aide d'un api en ligne. api:[API-NAME] Fait en C# avec .NET MAUI Nam consequat nisl eu convallis dignissim. Nulla bibendum, diam et posuere vehicula, ligula lacus egestas lectus, ut congue sapien mauris a quam. Donec vel placerat tellus, vel dictum diam. Cras euismod odio erat, sit amet fringilla velit condimentum quis. Nunc turpis tellus, molestie ac ex id, hendrerit pulvinar justo. Sed scelerisque libero ac volutpat rhoncus.
+			</p>
+
+		</div>
+
+		<div class="project-view centerOnWide90" id="projets1">
+			<div class="project-img">
+				<img src="img/ComacPE.PNG">
+			</div>
+			<h2>Paragr</h2>
+			<p>
+				logiciel vurreau d'étude. remplissant automatiquement des infos sur les fiches appuis dépendant d'ENEDIS. Python, PyQt5 Nulla bibendum, diam et posuere vehicula, ligula lacus egestas lectus, ut congue sapien mauris a quam. Donec vel placerat tellus, vel dictum diam. Cras euismod odio erat, sit amet fringilla velit condimentum quis. Nunc turpis tellus, molestie ac ex id, hendrerit pulvinar justo. Sed scelerisque libero ac volutpat rhoncus.
+			</p>
+
+		</div>
+
 	</section>
-	
-	<section id="liens"class="section">
-		<div class="boxed">
+
+	<div id="parcours" class="sep-darktolight section"></div>
+
+	<section>
+		<h1 class="sectionTitle lightArea">Parcours et formations</h1>
+		<div class="parcours lightArea">
+			<div class="centerOnWide ">
+				<h2>Diplomes</h2>
+				<ul>
+					<li>BAC STI2D - System d'information numerique, lycée jean-perrin - 2011 - 2014</li>
+					<li>DUT GEII - Réseaux Industriels, IUT Aix-Marseille - 2014 - 2017</li>
+					<li>Formation Bureau d'études, Access Pro - 12/2018 - 02/2019</li>
+					<li>Formation Concepteur Développeur Full Stack, Diginamic RNCP 6 - Débuté en 2025</li>
+				</ul>
+					
+				<h2>postes</h2>
+				<ul>
+					<li>Développeur Scripts, EDF DIPDE - 2017</li>
+					<li>Technicien burreau d'étude, CPCP Telecom - 2018</li>
+					<li>Chargé d'applicatifs, CFI Tech - 2019 - 2022</li>
+				</ul>
+			</div>
+			<div class="centerOnWide90">
+				<ul>
+				<h2>Resume</h2>
+				<h3><li>DUT GEII - Réseaux Industriels</h3>
+					<p>Réalisation de nombreux projets électroniques et informatique, notamment via microcontrôleur PIC. Conception robotique. Étude d’outils industriels (Ladder Grafct). Développement pour système embarqué (C, ASM).</p>
+
+				<h3><li>Développeur Scripts</h3>
+					<p>Stage chez EDF à la Division de l'Ingénierie du Parc et De l'Environnement (DIPDE) de Marseille Sainte-Marguerite me permettant de développer mes connaissances et ma pratique.</p>
+
+				<h3><li>Formation Bureau d'études</h3>
+					<p>Formation aux métiers de technicien bureau d’étude comprenant l’utilisation d’outils nécessaires à l’emploi en Télécom, tels que AUTOCAD et QGIS.</p>
+
+				<h3><li>Chargé d'applicatifs</h3>
+					<p>Processus complet de développement d'applications python et C# (renseignement auprès des équipes, conception de cahier des charges, prototypage, test et debug, déploiement et suivis long terme). Développement de plugin Qgis python.</p>
+
+				<h3><li>Développeur Jeux Vidéo C#</h3>
+					<p>Dans un petite équipe dont 3 développeurs. Utilisation de Git pour le développement et suivi des tâches à distance.</p>
+
+				<h3><li>Projets formation DIGINAMIC</h3>
+					<p>Analyse et conception d’une application, développement Backend avec Spring, développement Frontend avec Angular, mise en place de composant NoSql.</p>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div id="liens" class="sep-lighttodark section"></div>
+
+	<section>
+		<div class="darkArea">
+			<div class="centerOnWide">
 			<p class="hsub">LIENS UTILES</p>
-			<div class="links">
+				<div class="links">
 				<a href="https://nerudas.itch.io" class="link-group">
 						<img src="https://static.itch.io/images/itchio-textless-black.svg">
 						<p>Ma page itch.Io</p>	
@@ -250,9 +217,10 @@
 						<img src="https://images.icon-icons.com/1476/PNG/512/linkedin_101776.png">
 						<p>Mon LinkedIn</p>	
 				</a>			
-				<a href="https://3wacademy.fr" class="link-group">
-						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRvMaLKg3X_DDI8joLiuHxncImwO_uP2ekg&s">
-						<p>3WAcademy</p>
+				<a href="https://www.diginamic.fr" class="link-group">
+						<!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXRvMaLKg3X_DDI8joLiuHxncImwO_uP2ekg&s">-->
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQviL53-4kdUpjp86cBl8_l2wxWIfXA7TYJJkqHZWLqPF80B06Nbvw6ZW_Nx9KcmRmCak&usqp=CAU">
+						<p>Diginamic</p>
 				</a>
 				<a href="ressources/CV Tristan - V4.1.pdf" download class="link-group">
 						<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Curriculum-vitae-warning-icon.svg">
@@ -262,21 +230,25 @@
 						<img src="https://images.icon-icons.com/3197/PNG/512/cap_graduation_icon_194923.png">
 						<p>Diplomes?</p>
 				</a>
-				
+				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section id="contact"class="section">
-		<div class="boxed">
-			<p class="hsub">CONTACTE</p>
-			<div class="contact-item">
-				<img src="https://images.icon-icons.com/614/PNG/512/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.png">
-				<p>01 02 03 04 05</p>
-			</div>
-			<div class="contact-item">
-				<img src="https://images.icon-icons.com/1239/PNG/512/mail5_84078.png">
-				<p>el-basri_t@hotmail.com</p>
+
+	<div id="contact" class="sep-darktolight section" ></div>
+
+	<section>
+		<div class="lightArea">
+			<div class="centerOnWide">
+				<h2>CONTACTE</h2>
+				<div class="contact-item">
+					<img src="https://images.icon-icons.com/614/PNG/512/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.png">
+					<p>01 02 03 04 05</p>
+				</div>
+				<div class="contact-item">
+					<img src="https://images.icon-icons.com/1239/PNG/512/mail5_84078.png">
+					<p>el-basri_t@hotmail.com</p>
+				</div>
 			</div>
 		</div>
 	</section>
