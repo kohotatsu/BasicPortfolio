@@ -76,10 +76,16 @@ a:hover{
 	.menu-items a{
 		display: none;
 	}
+	p{
+		font-size: 5vw;
+	}
 }
 @media screen and (min-width: 601px){
 	.respnsive-menu-buton div{
 		display: none;
+	}
+	p{
+		font-size: 1vw;
 	}
 }
 
