@@ -4,10 +4,11 @@ ShowProject(0);
 
 function ToggleMenu(x) {
   x.classList.toggle("change");
-  let mh = document.getElementsByClassName("respnsive-menu-items")[0].style.maxHeight;
-  
-  document.getElementsByClassName("respnsive-menu-items")[0].style.maxHeight = mh == "50vh" ? "0vh" : "50vh";
-  document.getElementsByClassName("respnsive-menu-items")[0].style.minHeight = mh == "50vh" ? "0vh" : "20vh";
+  let rmiStyle = document.getElementsByClassName("respnsive-menu-items")[0].style;
+  let currentHeight = rmiStyle.maxHeight;
+  rmiStyle.maxHeight = currentHeight == "50vh" ? "0vh" : "50vh";
+  rmiStyle.minHeight = currentHeight == "50vh" ? "0vh" : "20vh";
+  rmiStyle.padding = currentHeight == "50vh" ? "0ch" : "2ch";
   
   //console.log(mh);
 }
