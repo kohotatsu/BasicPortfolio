@@ -332,3 +332,13 @@ justify-content: center;
 .project-img img{
 max-width: 90vw;
 }
+
+.custom-list{
+/*line-height: 3vh;*/
+text-indent: 1vw;
+list-style-position: inside;
+list-style-type: disclosure-open;
+}
+.custom-list li{
+	padding-block: 2vh;
+}
