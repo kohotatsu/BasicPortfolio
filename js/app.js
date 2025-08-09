@@ -1,5 +1,5 @@
 console.log("Hello Web");
-ShowProject(0);
+//ShowProject(0);
 
 
 function ToggleMenu(x) {
@@ -13,7 +13,7 @@ function ToggleMenu(x) {
   //console.log(mh);
 }
 
-function ShowProject(n){
+/*function ShowProject(n){
   let projs = document.getElementsByClassName("project-view")
   //console.log("proj wanted: " + n);
   for (var i = 0; i < projs.length; i++) {
@@ -27,5 +27,4 @@ function ShowProject(n){
   case 1:
     document.getElementById("projets1").style.display = "block";
     break;
-  }*/
-}
+}*/

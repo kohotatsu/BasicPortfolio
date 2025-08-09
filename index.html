@@ -90,32 +90,50 @@
 			<h1>PREOJETS</h1>
 			<p ></br>
 			Présenté ci-dessous, une courte sélection des projets que j'ai eu l'occasion de réaliser au cours de mon parcours. N'étant pas spécialisé dans le développement web, je n'ai pas de projets suffisamment aboutis pour que l'un d'eux figure ici.</p>
-			</div>	
-		
-		<div class="carousel centerOnWide90">
-			<ul class="carousel-list">
-					<a class="carousel-button rotate-back" href="MinecraftMod-Project.html">
-						<img src="img/MinecraftMod.PNG" >
-						<h3 class="project-label">Game Mod (JAVA)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(1)">
-						<img src="img/Capture IG 4.PNG " >
-						<h3 class="project-label">Video Game (C#, Godot)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(2)">
-						<img src="img/CAPFT ErrorVerif.PNG ">
-						<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(3)">
-						<img src="img/reciepeFinder.PNG ">
-						<h3 class="project-label">custom reciepe app (C#, MAUI)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(4)">
-						<img src="img/ComacPE.PNG">
-						<h3 class="project-label">Data treatment software (Python, Pyqt5)</h3>
-					</a>
-			</ul>
+		</div>	
+		<div class="centerOnWide">
+			<div class="project-filters">
+				<p>filters:</p>
+				<div class="theme-filter">
+					<button class="active-filter">Jeux Vidéo</button> <!--JV-->
+					<button>bureau d'étude</button> <!--BE-->
+					<button>applications personels</button> <!--PP-->
+				</div>
+				<div class="language-filter">
+					<button>C#</button> <!--Cs-->
+					<button>C++</button> <!--Cpp-->
+					<button>Java</button> <!--JAVA-->
+					<button>Python</button> <!--PYRHON-->
+					<button>Powershell</button> <!--PS-->
+					<button>GPU languages</button> <!--GPUL-->
+				</div>
+				
+			</div>
 		</div>
+		<div class="projects-board centerOnWide90">
+			<a class="project-preview JV Cs" href="MinecraftMod-Project.html "id="projets0">
+				<img src="img/MinecraftMod.PNG" >
+				<h3 class="project-label">Game Mod (JAVA)</h3>
+			</a>
+			<a class="project-preview JV Cs GPUL " href="MinecraftMod-Project.html"id="projets1">
+				<img src="img/Capture IG 4.PNG " >
+				<h3 class="project-label">Video Game (C#, Godot)</h3>
+			</a>
+			<a class="project-preview BE PYTHON" href="MinecraftMod-Project.html"id="projets2">
+				<img src="img/CAPFT ErrorVerif.PNG ">
+				<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
+			</a>
+			<a class="project-preview PP Cs" href="MinecraftMod-Project.html"id="projets3">
+				<img src="img/reciepeFinder.PNG ">
+				<h3 class="project-label">custom reciepe app (C#, MAUI)</h3>
+			</a>
+			<a class="project-preview BE PYTHON" href="MinecraftMod-Project.html"id="projets4">
+				<img src="img/ComacPE.PNG">
+				<h3 class="project-label">Data treatment software (Python, Pyqt5)</h3>
+			</a>
+		</div>
+		
+		<!--
 		<div class="project-view centerOnWide90" id="projets0">
 			<h1>PROJECT TITLE</h1>
 			<div class="project-img">
@@ -171,7 +189,7 @@
 			</p>
 
 		</div>
-
+		-->
 	</section>
 
 	<div id="parcours" class="sep-darktolight section"></div>

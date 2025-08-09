@@ -253,7 +253,7 @@ h1{
 	padding: 2ch;
 	margin: 2.5ch;
 	box-shadow: 2px 2px 4px #000;
-	
+
 }
 
 .centerOnWide {
@@ -359,4 +359,51 @@ list-style-type: disclosure-open;
 }
 .custom-list li{
 	padding-block: 2vh;
+}
+/* V3 --------------*/
+
+.project-filters{
+
+}
+
+.project-filters button{
+	border-radius: 1ch;
+    background-color: transparent;
+    min-height: 4ch;
+    padding: 1ch;
+    margin-inline: 1ch;
+    color: #AAF;
+    border: ridge;
+    border-color: #aaaaff64;
+}
+.project-filters button:hover{
+	background-color: #55A;
+}
+
+.theme-filter{
+
+}
+.language-filter{
+
+}
+
+.active-filter{
+	justify-self: right;
+	color: #FFA;
+  border-color: #ffffaa64;
+}
+
+.projects-board{
+display: grid;
+grid-template: auto / auto auto auto;
+grid-column-gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.project-preview{
+
+}
+.project-preview img{
+	max-width: 30vw;
 }
