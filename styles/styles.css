@@ -239,6 +239,23 @@ h1{
 
 /* V2 */
 
+.competences{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.competence-item{
+	max-height: 10ch;
+	background-color: darkred;
+	border-radius: 3ch;
+	min-height: 30ch;
+	padding: 2ch;
+	margin: 2.5ch;
+	box-shadow: 2px 2px 4px #000;
+	
+}
+
 .centerOnWide {
 	margin-inline: auto;
 	padding-inline: 2em;
