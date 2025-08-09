@@ -368,42 +368,64 @@ list-style-type: disclosure-open;
 
 .project-filters button{
 	border-radius: 1ch;
-    background-color: transparent;
     min-height: 4ch;
     padding: 1ch;
     margin-inline: 1ch;
-    color: #AAF;
+    /*
+    background-color: transparent;
     border: ridge;
+    color: #AAF;
     border-color: #aaaaff64;
+    float: right;
+		color: #FFA;
+  	border-color: #ffffaa64;
+    */
 }
 .project-filters button:hover{
 	background-color: #55A;
 }
 
-.theme-filter{
-
+.theme-filters{
+display: flex;
 }
-.language-filter{
-
+.language-filters{
+display: flex;
 }
 
 .active-filter{
-	justify-self: right;
+	align-items: flex-end;
 	color: #FFA;
   border-color: #ffffaa64;
+  background-color: #ffffaa32;
+  order: -1;
+}
+.inactive-filter{
+	align-items: flex-start;
+	color: #AAF;
+  border-color: #aaaaff64;
+  background-color: transparent;
 }
 
 .projects-board{
-display: grid;
+	padding-block: 5ch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: center;
+/*display: grid;
 grid-template: auto / auto auto auto;
 grid-column-gap: 20px;
 justify-content: center;
-align-items: center;
+align-items: center;*/
 }
 
 .project-preview{
+	width: 25vw;
+	height: 25vw;
 
 }
 .project-preview img{
-	max-width: 30vw;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }

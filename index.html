@@ -94,18 +94,18 @@
 		<div class="centerOnWide">
 			<div class="project-filters">
 				<p>filters:</p>
-				<div class="theme-filter">
-					<button class="active-filter">Jeux Vidéo</button> <!--JV-->
-					<button>bureau d'étude</button> <!--BE-->
-					<button>applications personels</button> <!--PP-->
+				<div class="theme-filters">
+					<button class="active-filter" id ="JV" onclick="ToggleFilterActivity(this)">Jeux Vidéo</button> <!--JV-->
+					<button class="inactive-filter" id ="BE" onclick="ToggleFilterActivity(this)">bureau d'étude</button> <!--BE-->
+					<button class="inactive-filter" id ="PP" onclick="ToggleFilterActivity(this)">applications personels</button> <!--PP-->
 				</div>
-				<div class="language-filter">
-					<button>C#</button> <!--Cs-->
-					<button>C++</button> <!--Cpp-->
-					<button>Java</button> <!--JAVA-->
-					<button>Python</button> <!--PYRHON-->
-					<button>Powershell</button> <!--PS-->
-					<button>GPU languages</button> <!--GPUL-->
+				<div class="language-filters">
+					<button class="inactive-filter" id ="Cs" onclick="ToggleFilterActivity(this)">C#</button> <!--Cs-->
+					<button class="inactive-filter" id ="Cpp" onclick="ToggleFilterActivity(this)">C++</button> <!--Cpp-->
+					<button class="inactive-filter" id ="JAVA" onclick="ToggleFilterActivity(this)">Java</button> <!--JAVA-->
+					<button class="inactive-filter" id ="PYTHON" onclick="ToggleFilterActivity(this)">Python</button> <!--PYRHON-->
+					<button class="inactive-filter" id ="PS" onclick="ToggleFilterActivity(this)">Powershell</button> <!--PS-->
+					<button class="inactive-filter" id ="GPUL" onclick="ToggleFilterActivity(this)">GPU languages</button> <!--GPUL-->
 				</div>
 				
 			</div>
@@ -117,15 +117,35 @@
 			</a>
 			<a class="project-preview JV Cs GPUL " href="MinecraftMod-Project.html"id="projets1">
 				<img src="img/Capture IG 4.PNG " >
-				<h3 class="project-label">Video Game (C#, Godot)</h3>
+				<h3 class="project-label">Video Game shader(C#, Godot)</h3>
 			</a>
-			<a class="project-preview BE PYTHON" href="MinecraftMod-Project.html"id="projets2">
+			<a class="project-preview GPUL" href="MinecraftMod-Project.html"id="projets2">
 				<img src="img/CAPFT ErrorVerif.PNG ">
-				<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
+				<h3 class="project-label">ShaderToys</h3>
+			</a>
+			<a class="project-preview Cs JV" href="MinecraftMod-Project.html"id="projets3">
+				<img src="img/reciepeFinder.PNG ">
+				<h3 class="project-label">eternalPath</h3>
+			</a>
+			<a class="project-preview Cpp JV" href="MinecraftMod-Project.html"id="projets4">
+				<img src="img/ComacPE.PNG">
+				<h3 class="project-label">Raylib</h3>
+			</a>
+			<a class="project-preview Cpp PP" href="MinecraftMod-Project.html "id="projets0">
+				<img src="img/MinecraftMod.PNG" >
+				<h3 class="project-label">BadCam</h3>
+			</a>
+			<a class="project-preview Cs PP " href="MinecraftMod-Project.html"id="projets1">
+				<img src="img/Capture IG 4.PNG " >
+				<h3 class="project-label">DataGraph</h3>
 			</a>
 			<a class="project-preview PP Cs" href="MinecraftMod-Project.html"id="projets3">
 				<img src="img/reciepeFinder.PNG ">
 				<h3 class="project-label">custom reciepe app (C#, MAUI)</h3>
+			</a>
+			<a class="project-preview BE PYTHON" href="MinecraftMod-Project.html"id="projets2">
+				<img src="img/CAPFT ErrorVerif.PNG ">
+				<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
 			</a>
 			<a class="project-preview BE PYTHON" href="MinecraftMod-Project.html"id="projets4">
 				<img src="img/ComacPE.PNG">

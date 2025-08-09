@@ -13,6 +13,34 @@ function ToggleMenu(x) {
   //console.log(mh);
 }
 
+function ToggleFilterActivity(item){
+  item.classList.toggle("active-filter");
+  item.classList.toggle("inactive-filter");
+  FilterShownProject();
+}
+function FilterShownProject(){
+  let projectPreviews = document.getElementsByClassName("project-preview");
+  for(let i = 0 ; i < projectPreviews.length ; i ++ ){
+
+      projectPreviews[i].style.display = "flex"
+  }
+  let activeFilters = document.getElementsByClassName("active-filter");
+  if(activeFilters.length<=0) return;
+
+  let filterTags = new Set();
+  for(let i = 0 ; i < activeFilters.length ; i ++ ){
+      filterTags.add(activeFilters[i].id);
+  }  
+  for(let i = 0 ; i < projectPreviews.length ; i ++ ){
+    let needToShow = false;
+    for (const t of filterTags) {
+      needToShow = (projectPreviews[i].classList.contains(t));
+      if(needToShow) break;
+    }
+    if(!needToShow)projectPreviews[i].style.display = "none";
+  }
+}
+
 /*function ShowProject(n){
   let projs = document.getElementsByClassName("project-view")
   //console.log("proj wanted: " + n);
