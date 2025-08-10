@@ -79,6 +79,9 @@ a:hover{
 	p{
 		font-size: 5vw;
 	}
+	/*.project-filters{
+		display: none;
+	}*/
 }
 @media screen and (min-width: 601px){
 	.respnsive-menu-buton div{
@@ -87,6 +90,9 @@ a:hover{
 	p{
 		font-size: 1vw;
 	}
+	/*.project-filters{
+		display: block;
+	}*/
 }
 
 .menu-items a{
@@ -317,23 +323,6 @@ h1{
 	opacity: 40%;
 }
 
-.project-label{
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  pointer-events: none;
-  /*font-size: 5ch;*/
-  color: #fff;
-  text-shadow: 0 0 7px #000;
-  /*
-  -webkit-user-select: none; /* Safari 
-  -ms-user-select: none; /* IE 10 and IE 11 
-  user-select: none; /* Standard syntax 
-  */
-}
-
 .project-view{
 	display: auto;
 	opacity: 100%;
@@ -387,9 +376,11 @@ list-style-type: disclosure-open;
 
 .theme-filters{
 display: flex;
+flex-wrap: wrap;
 }
 .language-filters{
 display: flex;
+flex-wrap: wrap;
 }
 
 .active-filter{
@@ -420,12 +411,46 @@ align-items: center;*/
 }
 
 .project-preview{
-	width: 25vw;
-	height: 25vw;
+	position: relative;
+  aspect-ratio: 1 / 1;
+  max-height: 32vh;
+	width: auto;
+	margin: 2ch;
+	padding: 1ch;
+  background-color: #000;
+	border-radius: 3ch;
 
+}
+
+.project-preview :hover{
+	transform: scale(1.2);
+	z-index: 10;
+	transition: .2s;
 }
 .project-preview img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 2ch;
+	
+}
+
+.project-label{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.65); /* Black see-through */
+  color: #f1f1f1;
+  width: 80%;
+  transition: .2s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-preview:hover .project-label {
+  opacity: 1;
+  z-index: 11;
 }
