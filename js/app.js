@@ -43,10 +43,11 @@ function FilterShownProject(){
 
 function TriggerCollapse(self){
   var content = self.nextElementSibling;
-    if (content.style.maxHeight === "20vw") {
-      content.style.maxHeight = "0vw";
+    if (content.style.maxHeight === "100%") {
+      content.style.maxHeight = "0%";
+      content.style.maxHeight = "0px";
     } else {
-      content.style.maxHeight = "20vw";
+      content.style.maxHeight = "100%";
     }
 }
 
