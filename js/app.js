@@ -41,6 +41,15 @@ function FilterShownProject(){
   }
 }
 
+function TriggerCollapse(self){
+  var content = self.nextElementSibling;
+    if (content.style.maxHeight === "20vw") {
+      content.style.maxHeight = "0vw";
+    } else {
+      content.style.maxHeight = "20vw";
+    }
+}
+
 /*function ShowProject(n){
   let projs = document.getElementsByClassName("project-view")
   //console.log("proj wanted: " + n);
