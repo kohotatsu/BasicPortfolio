@@ -245,6 +245,19 @@ h1{
 
 /* V2 */
 
+.WIP{
+	position: sticky;
+  display: flex;
+  bottom: 90%;
+  left: 10%;
+  max-width: 80vw;
+  min-height: 5ch;
+  background-color: darkred;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .competences{
 	display: flex;
 	flex-wrap: wrap;
@@ -252,10 +265,10 @@ h1{
 }
 
 .competence-item{
-	max-height: 10ch;
+	/*min-height: 10ch;*/
+	/*max-height: 15ch;*/
 	background-color: darkred;
 	border-radius: 3ch;
-	min-height: 30ch;
 	padding: 2ch;
 	margin: 2.5ch;
 	box-shadow: 2px 2px 4px #000;
@@ -525,7 +538,7 @@ align-items: center;*/
 }
 
 .colaps-content{
-min-width: 20vw;
+min-width: 20ch;
 background-color: #0002;
 box-shadow: 3px 5px #0004;
 padding: 2ch;
