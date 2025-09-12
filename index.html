@@ -17,6 +17,9 @@
 			<p><br/>Concepteur développeur Full stack</p>
 		</div>
 	</div>
+	<div class="WIP">
+		<p>Work In Progress..</p>
+	</div>
 
 	<div class="menubar">
 		<img src="img/bunbun500.png" alt="logo" class="logo">
@@ -40,19 +43,6 @@
 					<a href="#" ><button class="back-button">Back</button> </a>
 				</div>
 			</div>
-		<!--
-		<hr></hr>
-		<nav>
-			<ul class="nav-links">
-				<li> <a href="#presentation">Presentation</a> </li>
-				<li> <a href="#parcours">Parcour&Formations</a> </li>
-				<li> <a href="#projets">Projets</a> </li>
-				<li> <a href="#liens">Liens</a> </li>
-				<li> <a href="#contact">Contact</a> </li>
-			</ul>
-		</nav>
-		<a href="#" class="cta"><button class="back-button">Back</button> </a>
-		-->
 	</div>
 	
 	<div id="presentation"class="section lightArea"></div>
@@ -60,6 +50,22 @@
 	<section>
 		<div class="presentation lightArea">
 			<div class="centerOnWide ">
+				<h1 align="center">Mes Competence</h1>
+				<div class="competences">
+					
+					<div class="competence-item">
+						<h1>Langues</h1>
+						<p>html/scc/JavaScript</br>C++/C#/JAVA</br>Python/PowerShell</br>GLSL</p>
+					</div>
+					<div class="competence-item">
+						<h1>Outils</h1>
+						<p>Notepad++/SublimText</br>VisualStudio/InteliJ</br>CMake/NuGets/Gradle</br>GitHub/GitDesktop/Fork/REST API</br>Unity/Godot</br>Discord/MsTeams</p>
+					</div>
+					<div class="competence-item">
+						<h1>Methodes</h1>
+						<p>AGILE</br>Orienté Objet/Orienté Data/Fonctionnel</p>
+					</div>
+				</div>
 				<h1>A PROPOS DE MOI</h1>
 				<p> Après un passage dans le privé ainsi que 3 années de formation et de programmation de projets en indépendant, je souhaite poursuivre mon apprentissage par le biais de l'alternance. Je recherche donc une entreprise aux alentours de Marseille ou en télétravail avec qui je pourrais évoluer dans le futur. [Ajouter diginamic avec cursus visé?]</p>	
 			</div>
@@ -74,32 +80,82 @@
 			<h1>PREOJETS</h1>
 			<p ></br>
 			Présenté ci-dessous, une courte sélection des projets que j'ai eu l'occasion de réaliser au cours de mon parcours. N'étant pas spécialisé dans le développement web, je n'ai pas de projets suffisamment aboutis pour que l'un d'eux figure ici.</p>
-			</div>	
-		
-		<div class="carousel centerOnWide90">
-			<ul class="carousel-list">
-					<a class="carousel-button rotate-back" onclick="ShowProject(0)">
-						<img src="img/MinecraftMod.PNG" >
-						<h3 class="project-label">Game Mod (JAVA)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(1)">
-						<img src="img/Capture IG 4.PNG " >
-						<h3 class="project-label">Video Game (C#, Godot)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(2)">
-						<img src="img/CAPFT ErrorVerif.PNG ">
-						<h3 class="project-label">Error Control software (Python, PyQt5)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(3)">
-						<img src="img/reciepeFinder.PNG ">
-						<h3 class="project-label">custom reciepe app (C#, MAUI)</h3>
-					</a>
-					<a class="carousel-button rotate-back" onclick="ShowProject(4)">
-						<img src="img/ComacPE.PNG">
-						<h3 class="project-label">Data treatment software (Python, Pyqt5)</h3>
-					</a>
-			</ul>
+		</div>	
+		<div class="centerOnWide">
+			<div class="project-filters">
+				<p>filters:</p>
+				<div class="theme-filters">
+					<button class="inactive-filter" id ="JV" onclick="ToggleFilterActivity(this)">Jeux Vidéo</button> <!--JV-->
+					<button class="inactive-filter" id ="BE" onclick="ToggleFilterActivity(this)">bureau d'étude</button> <!--BE-->
+					<button class="inactive-filter" id ="PP" onclick="ToggleFilterActivity(this)">applications personels</button> <!--PP-->
+				</div>
+				<div class="language-filters">
+					<button class="inactive-filter" id ="Cs" onclick="ToggleFilterActivity(this)">C#</button> <!--Cs-->
+					<button class="inactive-filter" id ="Cpp" onclick="ToggleFilterActivity(this)">C++</button> <!--Cpp-->
+					<button class="inactive-filter" id ="JAVA" onclick="ToggleFilterActivity(this)">Java</button> <!--JAVA-->
+					<button class="inactive-filter" id ="PYTHON" onclick="ToggleFilterActivity(this)">Python</button> <!--PYRHON-->
+					<button class="inactive-filter" id ="PS" onclick="ToggleFilterActivity(this)">Powershell</button> <!--PS-->
+					<button class="inactive-filter" id ="GPUL" onclick="ToggleFilterActivity(this)">GPU languages</button> <!--GPUL-->
+				</div>
+				
+			</div>
 		</div>
+		<div class="projects-board centerOnWide90">
+			<a class="project-preview JV JAVA" href="MinecraftMod-Project.html "id="projets0">
+				<img src="img/MinecraftMod.PNG" >
+				<div class="project-label overlay">Game Mod (JAVA)</div>
+			</a>
+			<a class="project-preview JV Cs Cpp GPUL " href="GellyGodot.html"id="projets1">
+				<img src="img/Capture IG 4.PNG " >
+				<div class="project-label">Video Game shader(C#, Godot)</div>
+			</a>
+			<a class="project-preview GPUL" href="ShaderToy.html"id="projets2">
+				<img src="img/MandelbrotShaderToy.PNG ">
+				<div class="project-label">ShaderToys</div>
+			</a>
+			<a class="project-preview Cs JV" href="EternalPaths.html"id="projets3">
+				<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1949310/header.jpg?t=1749483276">
+				<div class="project-label">eternalPath</div>
+			</a>
+			<a class="project-preview Cpp JV" href="RaylibGames.html"id="projets4">
+				<img src="img/Raylib.PNG">
+				<div class="project-label">Raylib</div>
+			</a>
+			<a class="project-preview Cs JV" href="GameJams.html"id="projets4">
+				<img src="https://static.itch.io/images/app-icon.png">
+				<div class="project-label">GameJams</div>
+			</a>
+			<a class="project-preview Cs JV" href="ProjetPersoUnity.html"id="projets4">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Unity_Hub_Logo.png">
+				<div class="project-label">Autre Prto Unity perso</div>
+			</a>
+			<a class="project-preview Cpp PP" href="EasySurveyCam.html "id="projets0">
+				<img src="img/BadCamBadCode.PNG" >
+				<div class="project-label">BadCam</div>
+			</a>
+			<a class="project-preview Cs PP " href="DataGraph.html"id="projets1">
+				<img src="img/Capture IG 4.PNG " >
+				<div class="project-label">DataGraph</div>
+			</a>
+			<a class="project-preview PP Cs" href="RecipeApp.html"id="projets3">
+				<img src="img/reciepeFinder.PNG ">
+				<div class="project-label">custom reciepe app (C#, MAUI)</div>
+			</a>
+			<a class="project-preview BE PYTHON" href="CFI_ErrorControl.html"id="projets2">
+				<img src="img/CAPFT ErrorVerif.PNG ">
+				<div class="project-label">Error Control software (Python, PyQt5)</div>
+			</a>
+			<a class="project-preview BE PYTHON" href="CFI_DataTreatment.html"id="projets4">
+				<img src="img/ComacPE.PNG">
+				<div class="project-label">Data treatment software (Python, Pyqt5)</div>
+			</a>
+			<a class="project-preview PS BE" href="EDF_PowerShell.html"id="projets4">
+				<img src="img/ComacPE.PNG">
+				<div class="project-label">EDF powershell</div>
+			</a>
+		</div>
+		
+		<!--
 		<div class="project-view centerOnWide90" id="projets0">
 			<h1>PROJECT TITLE</h1>
 			<div class="project-img">
@@ -155,29 +211,36 @@
 			</p>
 
 		</div>
-
+		-->
 	</section>
 
 	<div id="parcours" class="sep-darktolight section"></div>
 
 	<section>
 		<h1 class="sectionTitle lightArea">PARCOURS ET FORMATIONS</h1>
-		<div class="parcours lightArea">
-			<div class="centerOnWide ">
-				<h2>Diplomes</h2>
-				<ul class="custom-list">
-					<li>BAC STI2D </br> System d'information numerique, lycée jean-perrin - 2011 - 2014</li>
-					<li>DUT GEII </br> Réseaux Industriels, IUT Aix-Marseille - 2014 - 2017</li>
-					<li>Formation Bureau d'études </br>Access Pro - 12/2018 - 02/2019</li>
-					<li>Formation Concepteur Développeur Full Stack</br> Diginamic RNCP 6 - Débuté en 2025</li>
-				</ul>
-					
-				<h2>postes</h2>
-				<ul class="custom-list">
-					<li>Développeur Scripts</br> EDF DIPDE - 2017</li>
-					<li>Technicien burreau d'étude</br> CPCP Telecom - 2018</li>
-					<li>Chargé d'applicatifs</br> CFI Tech - 2019 - 2022</li>
-				</ul>
+		<div class="lightArea">
+			<div class="centerOnWide parcours-formation-titles">
+				<div class="parcours-formation-blocks">
+					<button class="colaps-button" onclick="TriggerCollapse(this)"><h2>Diplomes</h2></button>
+					<div class="colaps-content">
+						<ul class="custom-list">
+							<li>BAC STI2D </br> System d'information numerique, lycée jean-perrin - 2011 - 2014</li>
+							<li>DUT GEII </br> Réseaux Industriels, IUT Aix-Marseille - 2014 - 2017</li>
+							<li>Formation Bureau d'études </br>Access Pro - 12/2018 - 02/2019</li>
+							<li>Formation Concepteur Développeur Full Stack</br> Diginamic RNCP 6 - Débuté en 2025</li>
+						</ul>
+					</div>
+				</div>
+				<div class="parcours-formation-blocks">
+					<button class="colaps-button" onclick="TriggerCollapse(this)"><h2>postes</h2></button>
+					<div class="colaps-content">
+						<ul class="custom-list">
+							<li>Développeur Scripts</br> EDF DIPDE - 2017</li>
+							<li>Technicien burreau d'étude</br> CPCP Telecom - 2018</li>
+							<li>Chargé d'applicatifs</br> CFI Tech - 2019 - 2022</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="centerOnWide90">
 				<ul class="custom-list">

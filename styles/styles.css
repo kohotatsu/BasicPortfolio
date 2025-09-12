@@ -79,6 +79,9 @@ a:hover{
 	p{
 		font-size: 5vw;
 	}
+	/*.project-filters{
+		display: none;
+	}*/
 }
 @media screen and (min-width: 601px){
 	.respnsive-menu-buton div{
@@ -87,6 +90,9 @@ a:hover{
 	p{
 		font-size: 1vw;
 	}
+	/*.project-filters{
+		display: block;
+	}*/
 }
 
 .menu-items a{
@@ -121,6 +127,7 @@ a:hover{
 	background: #202040;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	max-height: 0vh;
+	border-radius: 2ch;
   position: absolute;
   right: 5vw;
   top: 60px;
@@ -238,6 +245,36 @@ h1{
 
 /* V2 */
 
+.WIP{
+	position: sticky;
+  display: flex;
+  bottom: 90%;
+  left: 10%;
+  max-width: 80vw;
+  min-height: 5ch;
+  background-color: darkred;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.competences{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.competence-item{
+	/*min-height: 10ch;*/
+	/*max-height: 15ch;*/
+	background-color: darkred;
+	border-radius: 3ch;
+	padding: 2ch;
+	margin: 2.5ch;
+	box-shadow: 2px 2px 4px #000;
+
+}
+
 .centerOnWide {
 	margin-inline: auto;
 	padding-inline: 2em;
@@ -299,23 +336,6 @@ h1{
 	opacity: 40%;
 }
 
-.project-label{
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  pointer-events: none;
-  /*font-size: 5ch;*/
-  color: #fff;
-  text-shadow: 0 0 7px #000;
-  /*
-  -webkit-user-select: none; /* Safari 
-  -ms-user-select: none; /* IE 10 and IE 11 
-  user-select: none; /* Standard syntax 
-  */
-}
-
 .project-view{
 	display: auto;
 	opacity: 100%;
@@ -341,4 +361,196 @@ list-style-type: disclosure-open;
 }
 .custom-list li{
 	padding-block: 2vh;
+}
+/* V3 --------------*/
+
+.project-filters{
+
+}
+
+.project-filters button{
+	border-radius: 1ch;
+    min-height: 4ch;
+    padding: 1ch;
+    margin-inline: 1ch;
+    /*
+    background-color: transparent;
+    border: ridge;
+    color: #AAF;
+    border-color: #aaaaff64;
+    float: right;
+		color: #FFA;
+  	border-color: #ffffaa64;
+    */
+}
+.project-filters button:hover{
+	background-color: #55A;
+}
+
+.theme-filters{
+display: flex;
+flex-wrap: wrap;
+}
+.language-filters{
+display: flex;
+flex-wrap: wrap;
+}
+
+.active-filter{
+	align-items: flex-end;
+	color: #FFA;
+  border-color: #ffffaa64;
+  background-color: #ffffaa32;
+  order: -1;
+}
+.inactive-filter{
+	align-items: flex-start;
+	color: #AAF;
+  border-color: #aaaaff64;
+  background-color: transparent;
+}
+
+.projects-board{
+	padding-block: 5ch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: center;
+/*display: grid;
+grid-template: auto / auto auto auto;
+grid-column-gap: 20px;
+justify-content: center;
+align-items: center;*/
+}
+
+
+@property --deg{
+	syntax: '<angle>';
+	inherits: true;
+	initial-value: 0deg;
+}
+
+.project-preview::before,.project-preview::after{
+	content: '';
+	position: absolute;
+	height: 33vh;
+	width: 33vh;
+	top:0;
+	left:0;
+	background: conic-gradient(
+		from 0deg at center,
+		#00c3ff,
+		#4d0199,
+		#6300c6,
+		#009dcd
+	);
+	border-radius: 3ch;
+	z-index: -2;
+	padding: 2px;
+}
+
+.project-preview::after{
+	z-index: -1;
+	filter: blur(10px);
+	animation:autoRotate 2s linear infinite;
+}
+
+@keyframes autoRotate{
+	to{
+		--deg: 360deg;
+	}
+}
+
+.project-preview{
+	position: relative;
+  aspect-ratio: 1 / 1;
+  max-height: 32vh;
+	width: auto;
+	margin: 2ch;
+	padding: 1ch;
+  background-color: #000;
+	border-radius: 3ch;
+	z-index: 10;
+}
+
+.projects-board :hover{
+	transform: scale(1.2);
+	z-index: 12;
+	transition: .2s;
+}
+.project-preview img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 2ch;
+	pointer-events: none;
+}
+
+.project-label{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  border-radius: 2ch;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.65); /* Black see-through */
+  color: #f1f1f1;
+  width: -webkit-fill-available;
+  transition: .2s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  z-index: 14;
+  pointer-events: none;
+}
+
+.project-preview:hover .project-label {
+  opacity: 1;
+  z-index: 11;
+}
+
+.parcours-formation-titles{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.parcours-formation-titles div{
+	flex-grow: 1;
+	margin-inline: 1ch;
+}
+
+.colaps-button{
+ background-color: #202040;
+  color: #FFBD69;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.colaps-button :hover{
+ background-color: #224;
+}
+
+.colaps-content{
+min-width: 20ch;
+background-color: #0002;
+box-shadow: 3px 5px #0004;
+padding: 2ch;
+
+max-height: 0vw;
+overflow: hidden;
+
+transition: max-height 1s 0s ease; 
+
+.formation{
+
+}
+.parcour{
+
 }
